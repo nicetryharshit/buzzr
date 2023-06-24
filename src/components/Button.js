@@ -5,18 +5,29 @@ const Button = ({ text, icon, backgroundColor, onClick }) =>
 {
     const [iconComponent, setIconComponent] = useState(null);
     const buttonStyle = {
-        backgroundColor: backgroundColor || colors.RED,
+        backgroundColor: backgroundColor || colors.BLUE,
         display: 'flex',
         alignItems: 'center',
-        padding: '10px',
+        padding: '1em',
         height: '2.5em',
+        border: 'none',
+        borderRadius: '1.25em',
+        cursor: 'pointer',
+        margin: '.5em',
     };
 
     const iconStyle = {
-        height: '1.25em',
+        height: '1.2em',
+        marginLeft: '5px',
         marginRight: '5px',
+        filter: 'invert(100%)',
     };
 
+    const textStyle = {
+        color: 'white',
+        marginRight: '5px',
+        marginLeft: '5px',
+    };
 
     useEffect(() =>
     {
@@ -43,7 +54,7 @@ const Button = ({ text, icon, backgroundColor, onClick }) =>
             {iconComponent && (
                 <img className="custom-button-icon" src={iconComponent} alt="Icon" style={iconStyle} />
             )}
-            {text && <span className="custom-button-text">{text}</span>}
+            {text && <span className="custom-button-text" style={textStyle}>{text}</span>}
         </button>
     );
 };

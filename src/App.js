@@ -6,7 +6,10 @@ function App()
 {
   return (
     <div className="App">
-      <Button text="SubmitSubmitSubmit" icon="share" />
+      <Button text="SUBMIT SUBMITSUBMIT SUBMIT" icon="share" />
+      <Button text="SUBMIT SUBMITSUBMIT SUBMIT" icon="share" />
+      <Button text="SUBMIT SUBMITSUBMIT SUBMIT" icon="share" />
+      <Button text="SUBMIT SUBMITSUBMIT SUBMIT" icon="share" />
     </div>
   );
 }
