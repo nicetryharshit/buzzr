@@ -18,15 +18,14 @@ const Button = ({ text, icon, backgroundColor, onClick }) =>
 
     const iconStyle = {
         height: '1.2em',
-        marginLeft: '5px',
-        marginRight: '5px',
         filter: 'invert(100%)',
     };
 
     const textStyle = {
         color: 'white',
-        marginRight: '5px',
-        marginLeft: '5px',
+        marginLeft: '0.5em',
+        fontFamily: 'Inter',
+        fontWeight: '400',
     };
 
     useEffect(() =>
